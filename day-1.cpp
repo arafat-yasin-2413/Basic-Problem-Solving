@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	// your code goes here
+	
 	int a = 5; 
 	int b = 10; 
 	
@@ -15,5 +15,30 @@ int main() {
 	
 
     cout << "After Swap a = "<< a <<" ,b=" << b <<endl;
+
+}
+
+
+// Problem 2 : Check Even / Odd
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isEven (int n) {
+    return (n % 2 == 0) ;
+}
+
+int main() {
+
+    int x ; 
+    cin >> x; 
+    
+    if(isEven(x)) {
+        cout << x << " is Even"<<endl;
+    }
+    else {
+        cout << x << " is Odd"<<endl;
+    }
+
 
 }
