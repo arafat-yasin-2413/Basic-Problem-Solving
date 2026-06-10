@@ -42,3 +42,37 @@ int main() {
 
 
 }
+
+
+
+// Problem 3 : Find Largest number among 3 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int largestAmongThreeNumbers ( int a, int b, int c) {
+    return max (a, max (b,c));
+}
+
+int main() {
+
+    int a, b, c;
+  
+    cin >> a >> b >> c; 
+    
+    // cout<<"Largest number is "<<largestAmongThreeNumbers(a,b,c)<<endl;
+    
+    if (a >= b && a >= c) {
+        cout << a <<" is Largest"<<endl;
+    }
+    else if(b >= a && b >= c) {
+        cout << b <<" is Largest"<<endl;
+    }
+    else {
+        cout << c <<" is Largest"<<endl;
+    }
+
+
+}
+
+
