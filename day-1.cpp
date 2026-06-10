@@ -76,3 +76,21 @@ int main() {
 }
 
 
+// Problem 4 : Celsius to Fahrenhiet
+
+#include <bits/stdc++.h>
+using namespace std;
+
+double toFahrenheit(double celsius) {
+    return (celsius * 9.0 / 5.0) + 32.0;
+}
+
+int main() {
+    
+    int temp ;
+    cin >> temp; 
+    
+    
+    cout << temp<< " in Fahrenheit: " << toFahrenheit(temp) << endl;
+
+}
