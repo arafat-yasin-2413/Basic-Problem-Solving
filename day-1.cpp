@@ -94,3 +94,27 @@ int main() {
     cout << temp<< " in Fahrenheit: " << toFahrenheit(temp) << endl;
 
 }
+
+
+// Problem 5 : Check Sign
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string checkSign (int n) {
+    if (n > 0 ){
+        return "positive";
+    }
+    else if(n < 0) {
+        return "negative";
+    }
+    else return "zero";
+}
+int main() {
+    
+    int n; 
+    cin >> n; 
+    
+    cout << checkSign(n)<<endl;
+}
+
