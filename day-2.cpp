@@ -99,3 +99,28 @@ int main() {
 }
 
 
+// Problem 10 : Count occurence of letter 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int countOccurence (string str, char x){
+    int cnt = 0;
+    for(char ch: str) {
+        if(x == ch) {
+            cnt++;
+        }
+    }
+    
+    return cnt;
+}
+
+int main() {
+    string str;
+
+    cin>>str;
+    
+    cout << "Occurrences of 'a' in 'banana': " << countOccurence("banana", 'a') << endl;
+
+    return 0;
+}
