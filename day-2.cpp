@@ -16,3 +16,32 @@ int main() {
 	cout<<reverseString(st)<<endl;
 
 }
+
+
+
+// Problem 7 : Counting Vowels
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int countVowels (string str){
+    int cnt = 0; 
+    
+    string vowels ="aeiouAEIOU";
+    
+    for (char ch: str) {
+        if(vowels.find(ch)!= string::npos) {
+            cnt++;
+        }
+    }
+    
+    return cnt;
+}
+int main() {
+	// your code goes here
+	string str;
+	cin >> str;
+	
+	cout<<countVowels(str)<<endl;
+
+}
