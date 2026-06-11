@@ -45,3 +45,31 @@ int main() {
 	cout<<countVowels(str)<<endl;
 
 }
+
+
+// Problem 8 : Check Palindrome
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool checkPalindrome (string str){
+    string reversed = str;
+    reverse(reversed.begin(), reversed.end());
+    return str == reversed;
+}
+int main() {
+	// your code goes here
+	string str;
+	cin >> str;
+	
+	if(checkPalindrome(str)) {
+	    cout<<"Palindrome"<<endl;
+	}
+	else {
+	    cout<<"Not Palindrome"<<endl;
+	}
+
+
+}
+
+
