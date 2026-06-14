@@ -38,3 +38,11 @@ const removeDuplicateFromArray = (arr)=>{
 };
 
 console.log(removeDuplicatesFilter([1, 2, 2, 3, 3, 4]));
+
+
+// PROBLEM 14 : Flatten an Array
+const flattenArrayWithFlat = (arr) => {
+    return arr.flat();
+};
+
+console.log(flattenArrayWithFlat([1, [2, 3], [4, 5]]));
