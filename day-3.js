@@ -28,3 +28,13 @@ const findMaximum = (arr) =>{
 }
 
 console.log(findMaximum([3,1,7,2,9]));
+
+
+
+// PROBLEM 13 : Remove Duplicate from array
+
+const removeDuplicateFromArray = (arr)=>{
+    return arr.filter((item,index)=> arr.indexOf(item) === index);
+};
+
+console.log(removeDuplicatesFilter([1, 2, 2, 3, 3, 4]));
