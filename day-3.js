@@ -46,3 +46,19 @@ const flattenArrayWithFlat = (arr) => {
 };
 
 console.log(flattenArrayWithFlat([1, [2, 3], [4, 5]]));
+
+
+// PROBLEM 15 : Chunk an Array
+const chunkArray = (arr, size) => {
+    const chunked = [];
+    let i = 0;
+
+    while (i < arr.length) {
+        chunked.push(arr.slice(i, i + size));
+        i += size;
+    }
+
+    return chunked;
+};
+
+console.log(chunkArray([1, 2, 3, 4, 5], 2));
